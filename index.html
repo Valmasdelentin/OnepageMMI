@@ -5,6 +5,7 @@
 	<meta charset="UTF-8">
 	<title>Emitime</title>
 	<link rel="stylesheet" href="css/style.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 </head>
 <body>
 <header>
@@ -28,12 +29,11 @@
 <div class="section" id="Newsletter"></div>
 <div class="section" id="Contact"></div>
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 <script>
 	$(document).ready(function() {
 		$('.js-scrollTo').on('click', function() { // Au clic sur un élément
 			var page = $(this).attr('href'); // Page cible
-			var speed = 2500; // Durée de l'animation (en ms)
+			var speed = 1250; // Durée de l'animation (en ms)
 			$('html, body').animate( { scrollTop: $(page).offset().top }, speed ); // Go
 			return false;
 		});
