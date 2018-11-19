@@ -11,13 +11,38 @@ body {
 
 .header a {
   float: left;
-  color: black;
   text-align: center;
-  padding: 12px;
+  padding: 12px 16px;
+  margin: 0 15px;
   text-decoration: none;
-  font-size: 18px; 
-  line-height: 25px;
+  font-size: 24px;
+  line-height: 36px;
   border-radius: 4px;
+}
+
+.header a#flask
+{
+  color:#546EEB;
+}
+
+.header a#montre
+{
+  color:#7468D2;
+}
+
+.header a#billet
+{
+  color:#a75bba;
+}
+
+.header a#lettre
+{
+  color:#B75C97;
+}
+
+.header a#arobase
+{
+  color:#EC5A83;
 }
 
 .header a.Emitime {
@@ -25,6 +50,35 @@ body {
   font-weight: bold;
 }
 
+.header a#flask:hover
+{
+  color:#f1f1f1;
+  background-color: #546EEB;
+}
+
+.header a#montre:hover
+{
+  color:#f1f1f1;
+  background-color: #7468D2;
+}
+
+.header a#billet:hover
+{
+  color:#f1f1f1;
+  background-color: #a75bba;
+}
+
+.header a#lettre:hover
+{
+  color:#f1f1f1;
+  background-color: #B75C97;
+}
+
+.header a#arobase:hover
+{
+  color:#f1f1f1;
+  background-color: #EC5A83;
+}
 .header a:hover {
   background-color: dodgerblue;
   color: white;
@@ -38,6 +92,10 @@ body {
   background-color:red;
   width: 100%;
   height: 100vh;
+}
+
+#emitime{
+  width: 180px;
 }
 
 .section#LeLabo {
