@@ -101,12 +101,12 @@ body {
 }
 
 .section#LeLabo {
-  background-color: blue;
+  background-color: #4f6bf3;
   width: 100%;
   height: 100vh;
 }
 .section#NosInventions {
-  background-color: pink;
+  background-color: #ff4b82;
   width: 100%;
   height: 100vh;
 }
@@ -133,6 +133,16 @@ body {
     height: 300px;
     padding-top: 25%;
     margin-left: auto;
+}
+
+.section h2
+{
+  color: white;
+  margin: auto;
+  text-align: center;
+  padding: 50px;
+  font-size: 45px;
+  font-family: font/neon_80s;
 }
 
 @media screen and (max-width: 720px) {
