@@ -48,6 +48,7 @@ body {
 .header a.Emitime {
   font-size: 25px;
   font-weight: bold;
+  line-height: 0;
 }
 
 .header a#flask:hover
