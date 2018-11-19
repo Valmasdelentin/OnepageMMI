@@ -1,11 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
 	<meta charset="UTF-8">
-	<title>ProjectOnePage</title>
+	<title>Emitime</title>
+	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-	<h1>it's ok</h1>
-	
+<header>
+	<div class="header">
+		<a href="#home" class="Emitime js-scrollTo">Emitime</a>
+		<div class="header-right">
+		    <a class="active js-scrollTo" href="#LeLabo">Le Labo</a>
+		    <a class="js-scrollTo" href="#NosInventions">Nos Inventions</a>
+		    <a class="js-scrollTo" href="#Donation">Donation</a>
+		    <a class="js-scrollTo" href="#Newsletter">Newsletter</a>
+		    <a class="js-scrollTo" href="#Contact">Contact</a>
+		</div>
+	</div>
+</header>
+<div class="section" id="home">
+	<div class="logo"></div>
+</div>
+<div class="section" id="LeLabo"></div>
+<div class="section" id="NosInventions"></div>
+<div class="section" id="Donation"></div>
+<div class="section" id="Newsletter"></div>
+<div class="section" id="Contact"></div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script>
+	$(document).ready(function() {
+		$('.js-scrollTo').on('click', function() { // Au clic sur un élément
+			var page = $(this).attr('href'); // Page cible
+			var speed = 2500; // Durée de l'animation (en ms)
+			$('html, body').animate( { scrollTop: $(page).offset().top }, speed ); // Go
+			return false;
+		});
+	});
+</script>
 </body>
 </html>
