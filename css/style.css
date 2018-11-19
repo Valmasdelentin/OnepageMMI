@@ -49,6 +49,7 @@ body {
   font-size: 25px;
   font-weight: bold;
   line-height: 0;
+  text-align: center;
 }
 
 .header a#flask:hover
