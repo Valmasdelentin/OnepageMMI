@@ -1,3 +1,8 @@
+@font-face {
+  font-family: "Neon";
+  src: url('font/neon_80s/Neon.ttf');
+}
+
 body {
   margin:0px;
 }
@@ -92,7 +97,7 @@ body {
 
 #home {
   background-color:red;
-  width: 100%;
+  width: 100vw;
   height: 100vh;
 }
 
@@ -102,7 +107,7 @@ body {
 
 .section#LeLabo {
   background-color: #4f6bf3;
-  width: 100%;
+  width: 100vw;
   height: 100vh;
 }
 .section#NosInventions {
@@ -137,12 +142,12 @@ body {
 
 .section h2
 {
-  color: white;
+    font-family:"Neon";
+  color: #fff;
   margin: auto;
   text-align: center;
   padding: 50px;
   font-size: 45px;
-  font-family: font/neon_80s;
 }
 
 @media screen and (max-width: 720px) {
