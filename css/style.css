@@ -1,10 +1,7 @@
-@font-face {
-  font-family: "Neon";
-  src: url('font/neon_80s/Neon.ttf');
-}
 
 body {
   margin:0px;
+  font-family: 'Avenir';
 }
 .header {
   overflow: hidden;
@@ -103,7 +100,14 @@ body {
 
 #emitime{
   width: 180px;
+  transition-duration: 0.25s;
 }
+
+#emitime:hover{
+  width: 160px;
+}
+
+
 
 .section#LeLabo {
   background-color: #4f6bf3;
@@ -142,7 +146,7 @@ body {
 
 .section h2
 {
-    font-family:"Neon";
+    font-family:"neon80";
   color: #fff;
   margin: auto;
   text-align: center;
@@ -163,4 +167,3 @@ body {
     float: none;
   }
 }
-
