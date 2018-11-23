@@ -23,7 +23,6 @@
 		    <a class="js-scrollTo" id="lettre" href="#Newsletter"><i class="fas fa-envelope"></i></a>
 		    <a class="js-scrollTo" id="arobase" href="#Contact"><i class="fas fa-at"></i></a>
 		</div>
-<!--        <div class="burger" onclick="myFunction(this)">-->
         <div class="burger">
           <div class="bar1"></div>
           <div class="bar2"></div>
@@ -69,13 +68,15 @@
         x.classList.toggle("change");
     }
     $( ".burger" ).click(function(){
-        if($(this).hasClass("off"))
+        if($(this).hasClass("on"))
         {
-           $(this).removeClass("off").addClass("on");
+            myFunction(this);
+           $(this).removeClass("on").addClass("off");
         }
         else
         {
-            $(this).removeClass("on").addClass("off");
+            myFunction(this);
+            $(this).removeClass("off").addClass("on");
         }
     });
 </script>
