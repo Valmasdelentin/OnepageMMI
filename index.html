@@ -70,7 +70,7 @@
     function myFunction(x) {
         x.classList.toggle("change");
     }
-    $( ".burger" ).click(function(){
+    $(".burger").click(function(){
         if($(this).hasClass("on"))
         {
             myFunction(this);
@@ -84,6 +84,11 @@
             $('.header-right').css('top', '0vh');
         }
     });
+
+	    $( "a.js-scrollTo" ).click(function() 
+	    {
+	  		$('.header-right').css('top', '-100vh');
+		});
 </script>
 
 </body>
