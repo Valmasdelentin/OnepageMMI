@@ -15,7 +15,7 @@ header{
 }
 
 .header a {
-  float: left;
+  float: right;
   text-align: center;
   padding: 12px 16px;
   margin: 0 15px;
@@ -23,6 +23,10 @@ header{
   font-size: 24px;
   line-height: 36px;
   border-radius: 4px;
+}
+
+div#helpTopMobile{
+	padding-right: 3%;
 }
 
 .header a#flask
@@ -56,7 +60,7 @@ header{
   line-height: 0;
   text-align: center;
   float:left;
-  padding-left:0px;
+  padding-left: 5%;
 }
 
 .header a#flask:hover
@@ -89,8 +93,7 @@ header{
   background-color: #EC5A83;
 }
 .header a:hover {
-  background-color: dodgerblue;
-  color: white;
+	background-color: #f1f1f1;
 }
 
 #home {
@@ -198,9 +201,10 @@ header{
     text-align: left;
   }
   .header a.Emitime{
-       padding-left:25%;
-       position:relative;
-       z-index:11;
+		left: calc(50% - 100px);
+	    padding: 5px;
+	    position: relative;
+	    z-index: 11;
     }
 
     .header-right {
@@ -222,5 +226,9 @@ header{
     z-index:10;
     position:relative;
     right:0;
+    }
+
+    div#helpTopMobile{
+    	margin-top:15%;
     }
 }
