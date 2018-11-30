@@ -75,11 +75,13 @@
         {
             myFunction(this);
            $(this).removeClass("on").addClass("off");
+           $('.header-right').css('top', '-100vh');
         }
         else
         {
             myFunction(this);
             $(this).removeClass("off").addClass("on");
+            $('.header-right').css('top', '0vh');
         }
     });
 </script>
