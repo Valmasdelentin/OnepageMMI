@@ -29,6 +29,12 @@ div#helpTopMobile{
 	padding-right: 3%;
 }
 
+div#helpTopMobile a h3
+	{
+		margin-left: 10%;
+    	display: none;
+	}
+
 .header a#flask
 {
   color:#546EEB;
@@ -221,6 +227,13 @@ div#helpTopMobile{
     .header a.Emitime:hover{
         background:#f1f1f1;
     }
+	
+	div#helpTopMobile a h3
+	{
+		margin-left: 10%;
+    	display: inline-block;
+	}
+
 
     .burger {
     display: inline-block;
