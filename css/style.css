@@ -213,8 +213,9 @@ div#helpTopMobile{
   width:100vw;
   height:100vh;
   top:-100vh;
-  background:white;
+  background:#F1F1F1;
   float:right;
+  transition: top .5s ease-in-out;
 }
 
     .header a.Emitime:hover{
@@ -225,10 +226,16 @@ div#helpTopMobile{
     display: inline-block;
     z-index:10;
     position:relative;
-    right:0;
+    right: 2%;
     }
 
     div#helpTopMobile{
-    	margin-top:15%;
+    	margin-top:20%;
+    }
+}
+
+@media screen and (max-width: 400px) {
+	.header a.Emitime{
+		left: 5%;
     }
 }
