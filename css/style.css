@@ -9,7 +9,7 @@ header{
   width: 100vw;
 }
 .header {
-  background-color: #f1f1f1;
+  background-color: #fff;
   padding: 20px 0px;
   height:5vh;
 }
@@ -72,35 +72,35 @@ div#helpTopMobile a h3
 
 .header a#flask:hover
 {
-  color:#f1f1f1;
+  color:#fff;
   background-color: #546EEB;
 }
 
 .header a#montre:hover
 {
-  color:#f1f1f1;
+  color:#fff;
   background-color: #7468D2;
 }
 
 .header a#billet:hover
 {
-  color:#f1f1f1;
+  color:#fff;
   background-color: #a75bba;
 }
 
 .header a#lettre:hover
 {
-  color:#f1f1f1;
+  color:#fff;
   background-color: #B75C97;
 }
 
 .header a#arobase:hover
 {
-  color:#f1f1f1;
+  color:#fff;
   background-color: #EC5A83;
 }
 .header a:hover {
-	background-color: #f1f1f1;
+	background-color: #fff;
 }
 
 a.js-scrollTo{
@@ -108,9 +108,17 @@ a.js-scrollTo{
 }
 
 #home {
-  background-color:red;
+  background-color:white;
   width: 100vw;
-  height: 100vh;
+  height: calc(95vh - 40px);
+}
+
+#myVideo {
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    margin: auto; 
+    height: calc(95vh - 40px);
 }
 
 #emitime{
@@ -129,36 +137,27 @@ a.js-scrollTo{
 .section#LeLabo {
   background-color: #4f6bf3;
   width: 100vw;
-  height: 100vh;
+  height: 95vh;
 }
 .section#NosInventions {
   background-color: #ff4b82;
   width: 100%;
-  height: 100vh;
+  height: 95vh;
 }
 .section#Donation {
   background-color: green;
   width: 100%;
-  height: 100vh;
+  height: 95vh;
 }
 .section#Newsletter {
   background-color: orange;
   width: 100%;
-  height: 100vh;
+  height: 95vh;
 }
 .section#Contact {
   background-color: purple;
   width: 100%;
-  height: 100vh;
-}
-
-.logo {
-    background-color: #1000ff;
-    margin-right: auto;
-    width: 300px;
-    height: 300px;
-    padding-top: 200px;
-    margin-left: auto;
+  height: 95vh;
 }
 
 .section h2
