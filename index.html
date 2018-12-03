@@ -8,6 +8,8 @@
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
 	<link rel="stylesheet" href="font/font.css">
 	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/loading.css">
+	<script src="js/pace.min.js" charset="utf-8"></script>
 </head>
 <body>
 <header>
@@ -24,7 +26,7 @@
 			    <a class="js-scrollTo" id="lettre" href="#Newsletter"><i class="fas fa-envelope"></i><h3>Newsletter</h3></a>
 			    <a class="js-scrollTo" id="arobase" href="#Contact"><i class="fas fa-at"></i><h3>Contact</h3></a>
 			</div>
-		   
+
 		</div>
         <div class="burger">
           <div class="bar1"></div>
@@ -71,7 +73,7 @@
 	});
 </script>
 <script>
-    
+
 </script>
 <script>
     function myFunction(x) {
@@ -97,9 +99,9 @@
         }
     });
 
-	    $( "a.js-scrollTo").click(function() 
+	    $( "a.js-scrollTo").click(function()
 	    {
-	    	myFunction($(".burger")[0]); 
+	    	myFunction($(".burger")[0]);
         	$(".burger").removeClass("on").addClass("off");
 	  		$('.header-right').css('top', '-500vh');
 		});
