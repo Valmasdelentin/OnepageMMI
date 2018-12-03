@@ -27,6 +27,7 @@ header{
 
 div#helpTopMobile{
 	padding-right: 3%;
+	float:right;
 }
 
 div#helpTopMobile a h3
@@ -102,6 +103,10 @@ div#helpTopMobile a h3
 	background-color: #f1f1f1;
 }
 
+a.js-scrollTo{
+	float:left;
+}
+
 #home {
   background-color:red;
   width: 100vw;
@@ -117,7 +122,9 @@ div#helpTopMobile a h3
   width: 160px;
 }
 
-
+.section {
+	padding: 7vh 0;
+}
 
 .section#LeLabo {
   background-color: #4f6bf3;
@@ -234,6 +241,10 @@ div#helpTopMobile a h3
     	display: inline-block;
 	}
 
+	a.js-scrollTo{
+		float:none;
+	}
+
 
     .burger {
     display: inline-block;
@@ -244,6 +255,7 @@ div#helpTopMobile a h3
 
     div#helpTopMobile{
     	margin-top:20%;
+    	float:none;
     }
 }
 
