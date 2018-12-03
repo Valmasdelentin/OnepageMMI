@@ -75,7 +75,7 @@
         {
             myFunction(this);
            $(this).removeClass("on").addClass("off");
-           $('.header-right').css('top', '-100vh');
+           $('.header-right').css('top', '-500vh');
         }
         else
         {
@@ -85,9 +85,11 @@
         }
     });
 
-	    $( "a.js-scrollTo" ).click(function() 
+	    $( "a.js-scrollTo").click(function() 
 	    {
-	  		$('.header-right').css('top', '-100vh');
+	    	myFunction($(".burger")[0]); 
+        	$(".burger").removeClass("on").addClass("off");
+	  		$('.header-right').css('top', '-500vh');
 		});
 </script>
 

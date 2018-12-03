@@ -218,7 +218,7 @@ div#helpTopMobile a h3
   z-index:10;
   width:100vw;
   height:100vh;
-  top:-100vh;
+  top:-500vh;
   background:#F1F1F1;
   float:right;
   transition: top .5s ease-in-out;
