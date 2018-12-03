@@ -146,7 +146,7 @@ a.js-scrollTo{
   height: 95vh;
 }
 .section#Donation {
-  background-color: green;
+  background-color: #422b57;
   width: 100%;
   height: 95vh;
 }
@@ -217,6 +217,22 @@ div.icon{
 
 #iconFlacon{
 	color:#4f6bf3;
+}
+
+#iconMontre{
+  color:#ff4b82;
+}
+
+#iconBillet{
+  color:#422b57;
+}
+
+#iconLetter{
+  color:orange;
+}
+
+#iconA{
+  color:purple;
 }
 
 @media screen and (max-width: 720px) {
