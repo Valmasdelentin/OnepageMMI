@@ -40,18 +40,23 @@
 </div>
 <div class="section" id="LeLabo">
 	<h2>Le Labo</h2>
+	<div class="icon"><i id="iconFlacon" class="sizeIcon fas fa-flask"></i></div>
 </div>
 <div class="section" id="NosInventions">
 	<h2>Nos inventions</h2>
+	<div class="icon"><i id="iconMontre" class="sizeIcon fas fa-stopwatch"></i></div>
 </div>
 <div class="section" id="Donation">
   <h2>Donation</h2>
+  <div class="icon"><i id="iconBillet" class="sizeIcon fas fa-money-bill-wave"></i></div>
 </div>
 <div class="section" id="Newsletter">
 	<h2>Newsletter</h2>
+	<div class="icon"><i id="iconLetter" class="sizeIcon fas fa-envelope"></i></div>
 </div>
 <div class="section" id="Contact">
 	<h2>Contact</h2>
+	<div class="icon"><i id="iconA" class="sizeIcon fas fa-at"></i></div>
 </div>
 
 
@@ -72,6 +77,11 @@
     function myFunction(x) {
         x.classList.toggle("change");
     }
+
+    $(document).ready(function() {
+    	$(".burger").addClass("off");
+    });
+
     $(".burger").click(function(){
         if($(this).hasClass("on"))
         {
