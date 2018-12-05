@@ -246,17 +246,74 @@ p#introLabo{
   font-size:14px;
   width:66%;
   margin: 40px auto;
+    font-family: "Avenir";
+}
+
+#photoAlbum{
+    width:100vw;
+    text-align:center;
+    margin:0 auto;
+    height:100%;
+    display:flex;
+}
+
+div.photo{
+    display:inline-block;
+    padding:50px;
+    margin:0 auto;
 }
 
 div.photoScientifique{
   background-color:white;
-  padding:20px;
-  width: 230px;
-  height: 260px;
-  margin: 0 auto;
+  padding:0 20px;
+  width:60%;
+
+  margin: auto;
   border-radius:20px;
-  display:inline-block;
 }
+
+.descriptionPhoto{
+    text-align: center;
+    padding:20px;
+    color:white;
+    font-family: "Avenir";
+    font-size:14px;
+    width: 230px;
+    margin:0 auto;
+}
+
+.personnages{
+    width:100%;
+    height:100%;
+}
+
+@media screen and (max-width: 1111px) {
+    #photoAlbum{
+    flex-direction: column;
+}
+
+div.photoScientifique{
+
+    width:60%;
+}
+
+.descriptionPhoto{
+
+   width:60%
+}
+}
+@media screen and (max-width: 900px) {
+    div.photoScientifique{
+
+    width:80%;
+}
+
+.descriptionPhoto{
+
+   width:80%
+}
+}
+
 
 @media screen and (max-width: 720px) {
   .header{
@@ -315,6 +372,7 @@ div.photoScientifique{
     	margin-top:20%;
     	float:none;
     }
+    
 }
 
 @media screen and (max-width: 400px) {
