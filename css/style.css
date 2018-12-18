@@ -8,6 +8,7 @@ body {
 header{
   position:fixed;
   width: 100vw;
+  z-index: 100;
 }
 .header {
   background-color: #fff;
@@ -246,17 +247,219 @@ p#introLabo{
   font-size:14px;
   width:66%;
   margin: 40px auto;
+font-family: "Avenir";
+}
+
+#photoAlbum{
+    width:100vw;
+    text-align:center;
+    margin:0 auto;
+    height:100%;
+    display:flex;
+    margin:auto;
+}
+
+div.photo{
+    display:inline-block;
+    padding:20px;
+    margin:0 auto;
 }
 
 div.photoScientifique{
   background-color:white;
-  padding:20px;
-  width: 230px;
-  height: 260px;
-  margin: 0 auto;
+  padding:10px;
+  width:100%;
+  margin: auto;
   border-radius:20px;
-  display:inline-block;
 }
+
+#nomSCientifiques{
+    color:white;
+    padding:10px;
+    font-size:20px;
+    width:100%;
+}
+
+.descriptionPhoto{
+    text-align: center;
+    padding:20px;
+    color:white;
+    font-family: "Avenir";
+    font-size:14px;
+    width: 230px;
+    margin:0 auto;
+}
+
+.personnages{
+    width:100%;
+    height:100%;
+}
+/*slide*/
+section.vertical-center-3 {
+      box-sizing: border-box;
+    }
+
+    .slider {
+        width: 90%;
+        margin: 2% auto;
+    }
+
+    .slick-slide {
+      margin: 0;
+    }
+
+    .slick-slide 
+    div .sliderPresentation {
+      width: 100vw;
+      min-height:95vh;
+      background-color: #ff4b82;
+    }
+
+    .slick-prev:before,
+    .slick-next:before {
+      color: black;
+    }
+
+
+    .slick-slide {
+      transition: all ease-in-out .3s;
+      }
+/*slide*/
+
+div.photoInvention
+{
+	background-color: black;
+    padding: 3%;
+    width: 40%;
+    height: 85vh;
+    margin: 3%;
+    float: left;
+    display: block;
+    border-radius: 10px;
+    position: relative;
+}
+
+div.descriptionInvention
+{
+	margin:3%;
+}
+
+div.zoneNomMachine
+{
+    background-color: orange;
+    float: right;
+    margin: 27px;
+    padding: 3px;
+    display: block;
+    position: relative;
+    width: 40%;
+}
+
+h3.NomMachine{
+  padding:3%;
+  text-align: center;
+}
+
+div.textMachine
+{
+    background-color: green;
+    width: 40%;
+    position: relative;
+    height: 68vh;
+    float: right;
+    padding: 3%;
+    display: block;
+}
+
+div#cochonDonation{
+  background-color: white;
+  border-radius: 10px;
+  width: 50vw;
+  height: 40vh;
+  margin:auto;
+  margin-top:3%;
+}
+
+div#boutonDonation
+{
+  background-color: white;
+  margin:auto;
+  margin-top:3%;
+  padding:5%;
+}
+
+h3#Donnez{
+  width:;
+  text-align: center;
+  font-size:12px;
+}
+
+@media screen and (max-width: 1111px) {
+    #photoAlbum{
+    flex-direction: column;
+}
+
+div.photoScientifique{
+
+    width:40%;
+}
+
+.descriptionPhoto{
+   width:60%;
+}
+}
+@media screen and (max-width: 900px) {
+    div.photoScientifique{
+
+    width:40%;
+}
+
+.descriptionPhoto{
+
+   width:80%;
+}
+
+/*slide*/
+
+div.photoInvention
+{
+    width: 88%;
+    float:none;
+    height:50vh;
+}
+
+div.descriptionInvention
+{
+  margin: 8%;
+}
+
+div.zoneNomMachine
+{
+    width: 95%;
+    float:none;
+    margin: 2.5%;
+}
+
+h3.NomMachine{
+    margin: 0;
+}
+
+div.textMachine
+{
+    width: 95%;
+    margin: 0;
+    float:none;
+}
+
+.slick-prev:before,
+    .slick-next:before {
+      display:none;
+    }
+
+/*slide*/
+
+}
+
 
 @media screen and (max-width: 720px) {
   .header{
@@ -315,6 +518,7 @@ div.photoScientifique{
     	margin-top:20%;
     	float:none;
     }
+    
 }
 
 @media screen and (max-width: 400px) {
