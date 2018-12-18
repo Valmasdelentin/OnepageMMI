@@ -8,6 +8,7 @@ body {
 header{
   position:fixed;
   width: 100vw;
+  z-index: 100;
 }
 .header {
   background-color: #fff;
@@ -311,7 +312,7 @@ section.vertical-center-3 {
     div .sliderPresentation {
       width: 100vw;
       min-height:95vh;
-      background-color: white;
+      background-color: #ff4b82;
     }
 
     .slick-prev:before,
@@ -327,27 +328,70 @@ section.vertical-center-3 {
 
 div.photoInvention
 {
-          background-color: black;
-    /* padding: 3%; */
-    width: 500px;
-    height: 95vh;
-    /* float: left; */
+	background-color: black;
+    padding: 3%;
+    width: 40%;
+    height: 85vh;
+    margin: 3%;
+    float: left;
+    display: block;
     border-radius: 10px;
-    position: absolute;
+    position: relative;
+}
+
+div.descriptionInvention
+{
+	margin:3%;
 }
 
 div.zoneNomMachine
 {
-  background-color:orange;
+    background-color: orange;
+    float: right;
+    margin: 27px;
+    padding: 3px;
+    display: block;
+    position: relative;
+    width: 40%;
 }
 
 h3.NomMachine{
   padding:3%;
+  text-align: center;
 }
 
 div.textMachine
 {
-  background-color:green;
+    background-color: green;
+    width: 40%;
+    position: relative;
+    height: 68vh;
+    float: right;
+    padding: 3%;
+    display: block;
+}
+
+div#cochonDonation{
+  background-color: white;
+  border-radius: 10px;
+  width: 50vw;
+  height: 40vh;
+  margin:auto;
+  margin-top:3%;
+}
+
+div#boutonDonation
+{
+  background-color: white;
+  margin:auto;
+  margin-top:3%;
+  padding:5%;
+}
+
+h3#Donnez{
+  width:;
+  text-align: center;
+  font-size:12px;
 }
 
 @media screen and (max-width: 1111px) {
@@ -374,6 +418,46 @@ div.photoScientifique{
 
    width:80%;
 }
+
+/*slide*/
+
+div.photoInvention
+{
+    width: 88%;
+    float:none;
+    height:50vh;
+}
+
+div.descriptionInvention
+{
+  margin: 8%;
+}
+
+div.zoneNomMachine
+{
+    width: 95%;
+    float:none;
+    margin: 2.5%;
+}
+
+h3.NomMachine{
+    margin: 0;
+}
+
+div.textMachine
+{
+    width: 95%;
+    margin: 0;
+    float:none;
+}
+
+.slick-prev:before,
+    .slick-next:before {
+      display:none;
+    }
+
+/*slide*/
+
 }
 
 
