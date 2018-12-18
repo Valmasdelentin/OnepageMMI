@@ -383,15 +383,18 @@ div#cochonDonation{
 div#boutonDonation
 {
   background-color: white;
+  width: 5vw;
+  height: 5vh;
   margin:auto;
   margin-top:3%;
   padding:5%;
 }
 
-h3#Donnez{
-  width:;
+p#Donnez{
+  
   text-align: center;
-  font-size:12px;
+  font-size:30px;
+  margin:0;
 }
 
 @media screen and (max-width: 1111px) {
