@@ -119,7 +119,7 @@ a.js-scrollTo{
     right: 0;
     bottom: 0;
     width: 100%;
-    margin: auto; 
+    margin: auto;
     height: calc(95vh - 40px);
     pointer-events: none;
 }
@@ -202,7 +202,7 @@ a.js-scrollTo{
     transform: rotate(45deg) translate(-8px, -8px);
     background-color: #ff4b82;
 }
-    
+
 /*/Burger*/
 
 div.icon{
@@ -308,7 +308,7 @@ section.vertical-center-3 {
       margin: 0;
     }
 
-    .slick-slide 
+    .slick-slide
     div .sliderPresentation {
       width: 100vw;
       min-height:95vh;
@@ -389,7 +389,7 @@ div#boutonDonation
 }
 
 p#Donnez{
-  
+
   text-align: center;
   font-size:30px;
   padding:18px;
@@ -466,9 +466,9 @@ div#myVideoDonnation{
     text-aligne: center;
     margin: auto 31%;
     height: 90%;
-    pointer-events: none; 
+    pointer-events: none;
 }
-    
+
 
 }
 
@@ -507,7 +507,7 @@ div#myVideoDonnation{
     .header a.Emitime:hover{
         background:#f1f1f1;
     }
-	
+
 	div#helpTopMobile a h3
 	{
 		margin-left: 10%;
@@ -530,7 +530,123 @@ div#myVideoDonnation{
     	margin-top:20%;
     	float:none;
     }
-    
+
+}
+
+.form-imput{
+  text-align: center;
+  height: 50px;
+  border-radius: 10px;
+  border: none;
+  line-height: 0
+}
+
+.formulaire{
+  margin: auto;
+  width: 650px;
+  margin-top: 75px;
+}
+
+.form-2-column{
+  display: inline-block;
+  width: 100%;
+  margin: 20px 0;
+}
+
+
+#nom{
+  width: 45%;
+  float: left;
+  margin-top: 20px;
+}
+
+#prenom{
+  float: right;
+  width: 45%;
+}
+
+#mail{
+  width: 100%;
+  clear: both;
+  margin: 10px 0;
+}
+
+input{
+  font-family: "Avenir";
+  font-size: 14px;
+}
+
+#list-invention-label{
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.div-list-invent{
+  color: #333;
+  padding: 10px 20px;
+  border-radius: 15px;
+  width: 400px;
+  background-color: white;
+  margin: auto;
+  text-align: center;
+}
+
+#list-invention{
+  list-style-type: none;
+  display: inline-block;
+  padding: 0
+
+}
+
+#list-invention li{
+  float: left;
+  font-size: 16px;
+  height: 20px;
+
+}
+
+#invention-item-rowlham, #invention-item-unirun{
+  margin-right: 15px;
+}
+
+
+/*MODIF CHECKBOXES*/
+
+
+input[type=checkbox] {
+  display: none;
+}
+
+input[type=checkbox] + label:before {
+  margin: 0px 6px 0 6px;
+  content: "";
+  display: inline-block;
+  width: 17px;
+  height: 17px;
+  background-color: #dadada;
+  border-radius: 6px;
+  border: 0
+}
+
+input[type=checkbox]:checked + label:before {
+  content: "\2713";
+  font-size: 16px;
+  color: #333;
+  background-color: #dadada  ;
+  border: 0;
+}
+
+#submit-form {
+  background-color: white;
+  border: 0;
+  text-align: center;
+  margin: auto;
+  margin-top: 30px;
+  width: 150px;
+  height: 50px;
+  display: block;
+  border-radius: 15px;
+  cursor: pointer;
 }
 
 @media screen and (max-width: 400px) {

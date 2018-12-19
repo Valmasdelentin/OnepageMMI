@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Envoi d'un email par formulaire</title>
+    <title>Merci de vous être inscrit !</title>
 </head>
 
 <body>

@@ -140,29 +140,47 @@
 
 
 
+<div class="formulaire">
 
 	<form method="POST" action="newsletter.php">
 
-<label for="nom">Nom</label> <input type="text"  name="nom" id="nom" value=""/><br />
+		<div class="form-2-column">
+			<input class="form-imput" type="text"  name="nom" id="nom" value="" placeholder="Votre nom de famille" /><br/>
+			<input class="form-imput" type="text"  name="prenom" id="prenom" placeholder="Votre prénom" value=""/><br/>
 
-<label for="prenom">Prenom</label> <input type="text"  name="prenom" id="prenom" value=""/><br />
+		</div>
 
-<label for="mail">Mail</label> <input type="email"  name="mail" id="mail" value=""/><br />
+		<input class="form-imput" type="email"  name="mail" id="mail" value="" placeholder="Votre adresse mail"/><br/>
 
-   <p><label for="inventions">Inventions</label>
-    Cochez les inventions qui vous interesse :<br />
+		<p id="list-invention-label">
+			Cochez les inventions qui vous interesse :<br/>
+		</p>
 
-		<input type="checkbox" name="invention[]" id="invRowlham" value="Rowlham" /><br />
-		<label for="invRowlham">Rowlham</label><br />
+		<div class="div-list-invent">
+			<ul id="list-invention">
+				<li class="invention-item" id="invention-item-rowlham">
+					<input type="checkbox" name="invention[]" class="form-case" id="invRowlham" value="Rowlham" />
+					<label for="invRowlham">Rowlham</label>
+				</li>
 
-    <input type="checkbox" name="invention[]" id="invUnirun"  value="The Unirun"/> <br />
-		<label for="invUnirun">The Unirun</label><br />
+				<li class="invention-item" id="invention-item-unirun">
+					<input type="checkbox" name="invention[]" class="form-case"  id="invUnirun"  value="The Unirun"/>
+					<label for="invUnirun">The Unirun</label>
+				</li>
 
-    <input type="checkbox" name="invention[]" id="invTieMeOut" value="Tie-Me-Out"/> <br />
-		<label for="invTieMeOut">Tie-Me-Out</label><br />
-</p>
+				<li class="invention-item" id="invention-item-tie">
+					<input type="checkbox" name="invention[]" class="form-case"  id="invTieMeOut" value="Tie-Me-Out"/>
+					<label for="invTieMeOut">Tie-Me-Out</label>
+				</li>
+			</ul>
+		</div>
+		<br>
+		<input id="submit-form" type="submit" name="Envoyer" value="Envoyer" />
 
-<input type="submit" name="Envoyer" value="Envoyer" /> </form>
+	</form>
+
+</div>
+
 </div>
 
 
