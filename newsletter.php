@@ -10,12 +10,12 @@
 
     <?php
 
-    foreach ($_POST['invention'] as $inventions) {
+    $total_invention = foreach ($_POST['invention'] as $inventions) {
       echo $inventions.', ';
     }
 
-    echo 'Salut '.$_POST['prenom'].', on bien reçu votre inscription pour la newsletter des machine : '.$inventions;
-    // $retour = mail($_POST['mail'], '[EMITIME] Nice to meet you, darling',
+    echo 'Salut '.$_POST['prenom'].', on bien reçu votre inscription pour la newsletter des machine : '.$total_invention;
+    // $retour = mail($_POST['mail'], '[EMITIME] Nice to meet you, darling',t
     // 'Salut '.$_POST['prenom'].', on bien reçu votre inscription pour la newsletter des machine : '.$inventions,
     //  'From : contact@emitime.com');
     //
