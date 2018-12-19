@@ -374,9 +374,16 @@ div.textMachine
 div#cochonDonation{
   background-color: white;
   border-radius: 10px;
-  width: 70vw;
+  width: 50%;
   height: 40vh;
   margin:6% auto;
+}
+
+#cochonou{
+    width: 30vw;
+    height: 100%;
+    display: flex;
+    margin: auto;
 }
 
 div#boutonDonation
@@ -386,6 +393,11 @@ div#boutonDonation
   height: 70px;
   margin:auto;
   border-radius:10px;
+  pointer-events: auto;
+}
+
+a{
+  text-decoration:none;
 }
 
 p#Donnez{
@@ -394,7 +406,9 @@ p#Donnez{
   font-size:30px;
   padding:18px;
   color:#422b57;
+  pointer-events: auto;
 }
+
 
 @media screen and (max-width: 1111px) {
     #photoAlbum{
@@ -459,18 +473,7 @@ div.textMachine
     }
 
 /*slide*/
-div#myVideoDonnation{
-    right: 0;
-    bottom: 0;
-    width: 37%;
-    text-aligne: center;
-    margin: auto 31%;
-    height: 90%;
-    pointer-events: none; 
-}
     
-
-}
 
 
 @media screen and (max-width: 720px) {
@@ -530,6 +533,10 @@ div#myVideoDonnation{
     	margin-top:20%;
     	float:none;
     }
+
+    div#cochonDonation{
+    height: 30vh;
+}
     
 }
 

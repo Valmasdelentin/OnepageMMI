@@ -88,7 +88,9 @@
 <!--slider-->
     <section class="vertical-center-3 slider">
         <div class="sliderPresentation">
-          <div class="photoInvention" id="invention1"></div>
+            <video autoplay muted loop>
+              <source src="animations/animation-hamster-emitime.mp4" type="video/mp4">
+            </video>
           <div class="descriptionInvention">
           	<div class="zoneNomMachine">
           		<h3 class="NomMachine">Nom machine</h3>
@@ -122,13 +124,15 @@
   <div class="icon">
     <i id="iconBillet" class="sizeIcon fas fa-money-bill-wave"></i>
   </div>
-  <div id="cochonDonation">
-    <video autoplay muted loop id="myVideoDonnation">
+  <div id="cochonDonation" class="video">
+    <video muted loop id="cochonou">
       <source src="animations/animation-cochon-emitime.mp4" type="video/mp4">
     </video>
   </div>
   <div id="boutonDonation">
-    <p id="Donnez">Donnez</p>
+    <a href="https://www.w3schools.com/html">
+      <p id="Donnez">Donnez</p>
+    </a>
   </div>
 </div>
 <div class="section" id="Newsletter">
@@ -197,6 +201,18 @@
         	$(".burger").removeClass("on").addClass("off");
 	  		$('.header-right').css('top', '-500vh');
 		});
+</script>
+
+<script>
+  var figure = $(".video").hover( hoverVideo, hideVideo );
+
+function hoverVideo(e) {  
+    $('video', this).get(0).play(); 
+}
+
+function hideVideo(e) {
+    $('video', this).get(0).pause(); 
+}
 </script>
 
 </body>
