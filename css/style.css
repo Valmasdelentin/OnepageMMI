@@ -328,7 +328,7 @@ section.vertical-center-3 {
 
 div.photoInvention
 {
-	background-color: black;
+	background-color: white;
     padding: 3%;
     width: 40%;
     height: 85vh;
@@ -337,6 +337,11 @@ div.photoInvention
     display: block;
     border-radius: 10px;
     position: relative;
+}
+
+div.photoInvention video{
+  width: 100%;
+  height: 100%;
 }
 
 div.descriptionInvention
