@@ -2,17 +2,22 @@
 body {
   margin:0px;
   font-family: 'Avenir';
+  overflow-x: hidden;
+}
+
+header{
+  position:fixed;
+  width: 100vw;
+  z-index: 100;
 }
 .header {
-  overflow: hidden;
-  background-color: #f1f1f1;
+  background-color: #fff;
   padding: 20px 0px;
-  position:fixed;
-  width:100%;
+  height:5vh;
 }
 
 .header a {
-  float: left;
+  float: right;
   text-align: center;
   padding: 12px 16px;
   margin: 0 15px;
@@ -21,6 +26,17 @@ body {
   line-height: 36px;
   border-radius: 4px;
 }
+
+div#helpTopMobile{
+	padding-right: 3%;
+	float:right;
+}
+
+div#helpTopMobile a h3
+	{
+		margin-left: 10%;
+    display: none;
+	}
 
 .header a#flask
 {
@@ -52,50 +68,60 @@ body {
   font-weight: bold;
   line-height: 0;
   text-align: center;
+  float:left;
+  padding-left: 5%;
 }
 
 .header a#flask:hover
 {
-  color:#f1f1f1;
+  color:#fff;
   background-color: #546EEB;
 }
 
 .header a#montre:hover
 {
-  color:#f1f1f1;
+  color:#fff;
   background-color: #7468D2;
 }
 
 .header a#billet:hover
 {
-  color:#f1f1f1;
+  color:#fff;
   background-color: #a75bba;
 }
 
 .header a#lettre:hover
 {
-  color:#f1f1f1;
+  color:#fff;
   background-color: #B75C97;
 }
 
 .header a#arobase:hover
 {
-  color:#f1f1f1;
+  color:#fff;
   background-color: #EC5A83;
 }
 .header a:hover {
-  background-color: dodgerblue;
-  color: white;
+	background-color: #fff;
 }
 
-.header-right {
-  float: right;
+a.js-scrollTo{
+	float:left;
 }
 
 #home {
-  background-color:red;
+  background-color:white;
   width: 100vw;
-  height: 100vh;
+  height: calc(95vh - 40px);
+}
+
+#myVideo {
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    margin: auto; 
+    height: calc(95vh - 40px);
+    pointer-events: none;
 }
 
 #emitime{
@@ -107,41 +133,34 @@ body {
   width: 160px;
 }
 
-
+.section {
+	padding: 7vh 0;
+}
 
 .section#LeLabo {
   background-color: #4f6bf3;
   width: 100vw;
-  height: 100vh;
+  min-height: 95vh;
 }
 .section#NosInventions {
   background-color: #ff4b82;
   width: 100%;
-  height: 100vh;
+  min-height: 95vh;
 }
 .section#Donation {
-  background-color: green;
+  background-color: #422b57;
   width: 100%;
-  height: 100vh;
+  min-height: 95vh;
 }
 .section#Newsletter {
   background-color: orange;
   width: 100%;
-  height: 100vh;
+  min-height: 95vh;
 }
 .section#Contact {
   background-color: purple;
   width: 100%;
-  height: 100vh;
-}
-
-.logo {
-    background-color: #1000ff;
-    margin-right: auto;
-    width: 300px;
-    height: 300px;
-    padding-top: 25%;
-    margin-left: auto;
+  min-height: 95vh;
 }
 
 .section h2
@@ -154,16 +173,375 @@ body {
   font-size: 45px;
 }
 
+/*Burger*/
+.burger {
+    display: none;
+    cursor: pointer;
+    float:right;
+    padding: 2px 10px;
+}
+
+.bar1, .bar2, .bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: #4f6bf3;
+    margin: 6px 0;
+    transition: 0.4s;
+}
+
+.change .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+    transform: rotate(-45deg) translate(-9px, 6px);
+    background-color: #ff4b82;
+}
+
+.change .bar2 {opacity: 0;background-color: #ff4b82;}
+
+.change .bar3 {
+    -webkit-transform: rotate(45deg) translate(-8px, -8px);
+    transform: rotate(45deg) translate(-8px, -8px);
+    background-color: #ff4b82;
+}
+    
+/*/Burger*/
+
+div.icon{
+	background-color:white;
+	padding:20px;
+	width: 35px;
+  height: 25px;
+  margin: 0 auto;
+	text-align: center;
+	border-radius:20px;
+}
+
+.sizeIcon{
+	font-size:25px;
+}
+
+#iconFlacon{
+	color:#4f6bf3;
+}
+
+#iconMontre{
+  color:#ff4b82;
+}
+
+#iconBillet{
+  color:#422b57;
+}
+
+#iconLetter{
+  color:orange;
+}
+
+#iconA{
+  color:purple;
+}
+#blockIntroLabo{
+  width:100vw;
+}
+p#introLabo{
+  color:white;
+  text-align:center;
+  font-size:14px;
+  width:66%;
+  margin: 40px auto;
+font-family: "Avenir";
+}
+
+#photoAlbum{
+    width:100vw;
+    text-align:center;
+    margin:0 auto;
+    height:100%;
+    display:flex;
+    margin:auto;
+}
+
+div.photo{
+    display:inline-block;
+    padding:20px;
+    margin:0 auto;
+}
+
+div.photoScientifique{
+  background-color:white;
+  padding:10px;
+  width:100%;
+  margin: auto;
+  border-radius:20px;
+}
+
+#nomSCientifiques{
+    color:white;
+    padding:10px;
+    font-size:20px;
+    width:100%;
+}
+
+.descriptionPhoto{
+    text-align: center;
+    padding:20px;
+    color:white;
+    font-family: "Avenir";
+    font-size:14px;
+    width: 230px;
+    margin:0 auto;
+}
+
+.personnages{
+    width:100%;
+    height:100%;
+}
+/*slide*/
+section.vertical-center-3 {
+      box-sizing: border-box;
+    }
+
+    .slider {
+        width: 90%;
+        margin: 2% auto;
+    }
+
+    .slick-slide {
+      margin: 0;
+    }
+
+    .slick-slide 
+    div .sliderPresentation {
+      width: 100vw;
+      min-height:95vh;
+      background-color: #ff4b82;
+    }
+
+    .slick-prev:before,
+    .slick-next:before {
+      color: black;
+    }
+
+
+    .slick-slide {
+      transition: all ease-in-out .3s;
+      }
+/*slide*/
+
+div.photoInvention
+{
+	background-color: black;
+    padding: 3%;
+    width: 40%;
+    height: 85vh;
+    margin: 3%;
+    float: left;
+    display: block;
+    border-radius: 10px;
+    position: relative;
+}
+
+div.descriptionInvention
+{
+	margin:3%;
+}
+
+div.zoneNomMachine
+{
+    background-color: orange;
+    float: right;
+    margin: 27px;
+    padding: 3px;
+    display: block;
+    position: relative;
+    width: 40%;
+}
+
+h3.NomMachine{
+  padding:3%;
+  text-align: center;
+}
+
+div.textMachine
+{
+    background-color: green;
+    width: 40%;
+    position: relative;
+    height: 68vh;
+    float: right;
+    padding: 3%;
+    display: block;
+}
+
+div#cochonDonation{
+  background-color: white;
+  border-radius: 10px;
+  width: 50%;
+  height: 40vh;
+  margin:6% auto;
+}
+
+#cochonou{
+    width: 30vw;
+    height: 100%;
+    display: flex;
+    margin: auto;
+}
+
+div#boutonDonation
+{
+  background-color: white;
+  width: 170px;
+  height: 70px;
+  margin:auto;
+  border-radius:10px;
+  pointer-events: auto;
+}
+
+a{
+  text-decoration:none;
+}
+
+p#Donnez{
+  
+  text-align: center;
+  font-size:30px;
+  padding:18px;
+  color:#422b57;
+  pointer-events: auto;
+}
+
+
+@media screen and (max-width: 1111px) {
+    #photoAlbum{
+    flex-direction: column;
+}
+
+div.photoScientifique{
+
+    width:40%;
+}
+
+.descriptionPhoto{
+   width:60%;
+}
+}
+@media screen and (max-width: 900px) {
+    div.photoScientifique{
+
+    width:40%;
+}
+
+.descriptionPhoto{
+
+   width:80%;
+}
+
+/*slide*/
+
+div.photoInvention
+{
+    width: 88%;
+    float:none;
+    height:50vh;
+}
+
+div.descriptionInvention
+{
+  margin: 8%;
+}
+
+div.zoneNomMachine
+{
+    width: 95%;
+    float:none;
+    margin: 2.5%;
+}
+
+h3.NomMachine{
+    margin: 0;
+}
+
+div.textMachine
+{
+    width: 95%;
+    margin: 0;
+    float:none;
+}
+
+.slick-prev:before,
+    .slick-next:before {
+      display:none;
+    }
+
+/*slide*/
+    
+
+
 @media screen and (max-width: 720px) {
   .header{
     position:relative;
+    width:100vw;
+    z-index:9999;
+    font-size:20px;
   }
   .header a {
     float: none;
     display: block;
+    padding:25px;
     text-align: left;
   }
-  .header-right {
-    float: none;
-  }
+  .header a.Emitime{
+		left: calc(50% - 100px);
+	    padding: 5px;
+	    position: relative;
+	    z-index: 11;
+    }
+
+    .header-right {
+  position:absolute;
+  z-index:10;
+  width:100vw;
+  height:100vh;
+  top:-500vh;
+  background:#F1F1F1;
+  float:right;
+  transition: top .5s ease-in-out;
+}
+
+    .header a.Emitime:hover{
+        background:#f1f1f1;
+    }
+	
+	div#helpTopMobile a h3
+	{
+		margin-left: 10%;
+    	display: inline-block;
+	}
+
+	a.js-scrollTo{
+		float:none;
+	}
+
+
+    .burger {
+    display: inline-block;
+    z-index:10;
+    position:relative;
+    right: 2%;
+    }
+
+    div#helpTopMobile{
+    	margin-top:20%;
+    	float:none;
+    }
+
+    div#cochonDonation{
+    height: 30vh;
+}
+    
+}
+
+@media screen and (max-width: 400px) {
+	.header a.Emitime{
+		left: 5%;
+    }
 }

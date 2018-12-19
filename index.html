@@ -8,6 +8,12 @@
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
 	<link rel="stylesheet" href="font/font.css">
 	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/loading.css">
+	<script src="js/pace.min.js" charset="utf-8"></script>
+<!--slider-->
+    <link rel="stylesheet" type="text/css" href="./slick/slick.css">
+    <link rel="stylesheet" type="text/css" href="./slick/slick-theme.css">
+    
 </head>
 <body>
 <header>
@@ -17,34 +23,141 @@
 			<img id="emitime" src="img/logo-typo.png" alt="boussole">
 		</a>
 		<div class="header-right">
-		    <a class="js-scrollTo" id="flask" href="#LeLabo"><i class="fas fa-flask"></i></a>
-		    <a class="js-scrollTo" id="montre" href="#NosInventions"><i class="fas fa-stopwatch"></i></a>
-		    <a class="js-scrollTo" id="billet" href="#Donation"><i class="fas fa-money-bill-wave"></i></a>
-		    <a class="js-scrollTo" id="lettre" href="#Newsletter"><i class="fas fa-envelope"></i></a>
-		    <a class="js-scrollTo" id="arobase" href="#Contact"><i class="fas fa-at"></i></a>
+			<div id="helpTopMobile">
+				<a class="js-scrollTo" id="flask" href="#LeLabo"><i class="fas fa-flask"></i><h3>Le Labo</h3></a>
+			    <a class="js-scrollTo" id="montre" href="#NosInventions"><i class="fas fa-stopwatch"></i><h3>Nos inventions</h3></a>
+			    <a class="js-scrollTo" id="billet" href="#Donation"><i class="fas fa-money-bill-wave"></i><h3>Donation</h3></a>
+			    <a class="js-scrollTo" id="lettre" href="#Newsletter"><i class="fas fa-envelope"></i><h3>Newsletter</h3></a>
+			    <a class="js-scrollTo" id="arobase" href="#Contact"><i class="fas fa-at"></i><h3>Contact</h3></a>
+			</div>
+
 		</div>
+        <div class="burger">
+          <div class="bar1"></div>
+          <div class="bar2"></div>
+          <div class="bar3"></div>
+        </div>
 	</div>
 </header>
 <div class="section" id="home">
-	<div class="logo"></div>
+	<video autoplay muted loop id="myVideo">
+		<source src="animations/animation-logo-emitime.mp4" type="video/mp4">
+	</video>
 </div>
 <div class="section" id="LeLabo">
 	<h2>Le Labo</h2>
+	<div class="icon"><i id="iconFlacon" class="sizeIcon fas fa-flask"></i></div>
+	<div id="blockIntroLabo">
+		<p id="introLabo">Le laboratoire Emitime est fier de pouvoir enfin vous proposer ses services ! 
+		Créé en 2035 par Jean Villin, Lucien Bramar et Drake Floyd, c’est l’avancée la plus important du siècle. La réunion de ces trois génies de la motorisation, de la science quantique et du design a permit la création du premier laboratoire de science spécialisé dans la commercialisation de voyage temporel. c’est par l’étude des trou de vers protoniques et de la déformation relative du temps (ainsi qu’un gros paquet de blé) que Emitime a put accomplir son rêve : vous emmener où vous le voulez, et surtout quand vous le voulez !
+		</p>
+	</div>
+	<div id="photoAlbum">
+		<div class="photo">
+			<div class="photoScientifique">
+                <img class="personnages" src="img/jeanVillian.svg" alt="">
+            </div>
+            <h4 id="nomSCientifiques">Jean Villin</h4>
+			<div>
+                <p class="descriptionPhoto">Jean Villin est un éminent scientifique français à l’origine du projet EMITIME. Il est spécialiste ingénieur en motorisation diplômé en 2031. C’est sa rencontre avec Lucien Bramar, éminent philosophe et physicien, qui va le pousser à créer son propre laboratoire : EMITIME avec comme but de pouvoir remonter dans le temps. </p>
+            </div>
+		</div>
+		<div class="photo">
+			<div class="photoScientifique">
+                <img class="personnages" src="img/lucienBramar.svg" alt="">
+            </div>
+             <h4 id="nomSCientifiques">Lucien Bramar</h4>
+			<div>
+                <p class="descriptionPhoto">Lucien Bramar est un grand chercheur philosophe, mathématicien, physicien. Plus connu pour ses collaborations que pour ses travaux personnels c’est  sa collaboration avec Jean Villin qui lui fera avoir en 2041 un superbe prix nobel de physique qui atteste de sa qualité scientifique.</p>
+            </div>
+		</div>
+		<div class="photo">
+			<div class="photoScientifique">
+                <img class="personnages" src="img/drakeFloyd.svg" alt="">
+            </div>
+             <h4 id="nomSCientifiques">Drake Floyd</h4>
+			<div>
+                <p class="descriptionPhoto">Né à Llanfair­pwll­gwyn­gyll­go­gery­chwyrn­drobwll­llan­tysilio­gogo­goch au Pays de Galles en 2019, Drake Floyd est un jeune ingénieur designer informaticien prodige qui premettra à Lucien Bramar de mettre en application ses thorèmes et va ainsi donner à Emitime une impulsion fondamentale à la création du Laboratoire.</p>
+            </div>
+		</div>
+	</div>
 </div>
 <div class="section" id="NosInventions">
 	<h2>Nos inventions</h2>
+	<div class="icon"><i id="iconMontre" class="sizeIcon fas fa-stopwatch"></i></div>
+<!--slider-->
+    <section class="vertical-center-3 slider">
+        <div class="sliderPresentation">
+            <video autoplay muted loop>
+              <source src="animations/animation-hamster-emitime.mp4" type="video/mp4">
+            </video>
+          <div class="descriptionInvention">
+          	<div class="zoneNomMachine">
+          		<h3 class="NomMachine">Nom machine</h3>
+          	</div>
+          	<div class="textMachine" id="textMachine1"></div>
+          </div>
+          
+        </div>
+        <div class="sliderPresentation">
+        	<div class="photoInvention" id="invention1"></div>
+          	<div class="descriptionInvention">
+	          	<div class="zoneNomMachine">
+	          		<h3 class="NomMachine">Nom machine</h3>
+	          	</div>
+	          	<div class="textMachine" id="textMachine1"></div>
+	        </div>
+        </div>
+        <div class="sliderPresentation">
+        	<div class="photoInvention" id="invention1"></div>
+        	<div class="descriptionInvention">
+	          	<div class="zoneNomMachine">
+	          		<h3 class="NomMachine">Nom machine</h3>
+	          	</div>
+        		<div class="textMachine" id="textMachine1"></div>
+        	</div>
+        </div>
+      </section>
 </div>
 <div class="section" id="Donation">
   <h2>Donation</h2>
+  <div class="icon">
+    <i id="iconBillet" class="sizeIcon fas fa-money-bill-wave"></i>
+  </div>
+  <div id="cochonDonation" class="video">
+    <video muted loop id="cochonou">
+      <source src="animations/animation-cochon-emitime.mp4" type="video/mp4">
+    </video>
+  </div>
+  <div id="boutonDonation">
+    <a href="https://www.w3schools.com/html">
+      <p id="Donnez">Donnez</p>
+    </a>
+  </div>
 </div>
 <div class="section" id="Newsletter">
 	<h2>Newsletter</h2>
+	<div class="icon"><i id="iconLetter" class="sizeIcon fas fa-envelope"></i></div>
 </div>
 <div class="section" id="Contact">
 	<h2>Contact</h2>
+	<div class="icon"><i id="iconA" class="sizeIcon fas fa-at"></i></div>
 </div>
+<!--slider-->
+ <script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
+  <script src="./slick/slick.js" type="text/javascript" charset="utf-8"></script>
 
-
+<!--slick-->
+<script type="text/javascript">
+      $(".vertical-center-3").slick({
+        dots: true,
+        vertical: false,
+        centerMode: false,
+        slidesToShow: 1,
+        slidesToScroll: 1
+      });
+</script>
+    
 <script>
 	$(document).ready(function() {
 		$('.js-scrollTo').on('click', function() { // Au clic sur un élément
@@ -54,6 +167,52 @@
 			return false;
 		});
 	});
+</script>
+<script>
+
+</script>
+<script>
+    function myFunction(x) {
+        x.classList.toggle("change");
+    }
+
+    $(document).ready(function() {
+    	$(".burger").addClass("off");
+    });
+
+    $(".burger").click(function(){
+        if($(this).hasClass("on"))
+        {
+            myFunction(this);
+           $(this).removeClass("on").addClass("off");
+           $('.header-right').css('top', '-500vh');
+        }
+        else
+        {
+            myFunction(this);
+            $(this).removeClass("off").addClass("on");
+            $('.header-right').css('top', '0vh');
+        }
+    });
+
+	    $( "a.js-scrollTo").click(function()
+	    {
+	    	myFunction($(".burger")[0]);
+        	$(".burger").removeClass("on").addClass("off");
+	  		$('.header-right').css('top', '-500vh');
+		});
+</script>
+
+<script>
+  var figure = $(".video").hover( hoverVideo, hideVideo );
+
+function hoverVideo(e) {  
+    $('video', this).get(0).play(); 
+}
+
+function hideVideo(e) {
+    $('video', this).get(0).pause(); 
+}
 </script>
 
 </body>
