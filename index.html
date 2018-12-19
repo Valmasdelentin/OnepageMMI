@@ -11,145 +11,157 @@
 	<link rel="stylesheet" href="css/loading.css">
 	<script src="js/pace.min.js" charset="utf-8"></script>
 <!--slider-->
-    <link rel="stylesheet" type="text/css" href="./slick/slick.css">
-    <link rel="stylesheet" type="text/css" href="./slick/slick-theme.css">
+  <link rel="stylesheet" type="text/css" href="./slick/slick.css">
+  <link rel="stylesheet" type="text/css" href="./slick/slick-theme.css">
     
 </head>
 <body>
-<header>
-	<div class="header">
-		<a href="#home" class="Emitime js-scrollTo">
-			<h1 style="display: none;">Emitime</h1>
-			<img id="emitime" src="img/logo-typo.png" alt="boussole">
-		</a>
-		<div class="header-right">
-			<div id="helpTopMobile">
-				<a class="js-scrollTo" id="flask" href="#LeLabo"><i class="fas fa-flask"></i><h3>Le Labo</h3></a>
-			    <a class="js-scrollTo" id="montre" href="#NosInventions"><i class="fas fa-stopwatch"></i><h3>Nos inventions</h3></a>
-			    <a class="js-scrollTo" id="billet" href="#Donation"><i class="fas fa-money-bill-wave"></i><h3>Donation</h3></a>
-			    <a class="js-scrollTo" id="lettre" href="#Newsletter"><i class="fas fa-envelope"></i><h3>Newsletter</h3></a>
-			    <a class="js-scrollTo" id="arobase" href="#Contact"><i class="fas fa-at"></i><h3>Contact</h3></a>
-			</div>
-
-		</div>
-        <div class="burger">
-          <div class="bar1"></div>
-          <div class="bar2"></div>
-          <div class="bar3"></div>
+  <header>
+  	<div class="header">
+  		<a href="#home" class="Emitime js-scrollTo">
+  			<h1 style="display: none;">Emitime</h1>
+  			<img id="emitime" src="img/logo-typo.png" alt="boussole">
+  		</a>
+  		<div class="header-right">
+  			<div id="helpTopMobile">
+          <a class="js-scrollTo" id="flask" href="#LeLabo">
+            <i class="fas fa-flask"></i><h3>Le Labo</h3>
+          </a>
+			    <a class="js-scrollTo" id="montre" href="#NosInventions">
+            <i class="fas fa-stopwatch"></i><h3>Nos inventions</h3>
+          </a>
+			    <a class="js-scrollTo" id="billet" href="#Donation">
+            <i class="fas fa-money-bill-wave"></i><h3>Donation</h3>
+          </a>
+			    <a class="js-scrollTo" id="lettre" href="#Newsletter">
+            <i class="fas fa-envelope"></i><h3>Newsletter</h3>
+          </a>
+			    <a class="js-scrollTo" id="arobase" href="#Contact">
+            <i class="fas fa-at"></i><h3>Contact</h3>
+          </a>
+  			</div>
+  		</div>
+      <div class="burger">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+      </div>
+  	</div>
+  </header>
+  <div class="section" id="home">
+  	<video autoplay muted loop id="myVideo">
+  		<source src="animations/animation-logo-emitime.mp4" type="video/mp4">
+  	</video>
+  </div>
+  <div class="section" id="LeLabo">
+  	<h2>Le Labo</h2>
+  	<div class="icon">
+      <i id="iconFlacon" class="sizeIcon fas fa-flask"></i>
+    </div>
+  	<div id="blockIntroLabo">
+  		<p id="introLabo">Le laboratoire Emitime est fier de pouvoir enfin vous proposer ses services ! 
+  		Créé en 2035 par Jean Villin, Lucien Bramar et Drake Floyd, c’est l’avancée la plus important du siècle. La réunion de ces trois génies de la motorisation, de la science quantique et du design a permit la création du premier laboratoire de science spécialisé dans la commercialisation de voyage temporel. c’est par l’étude des trou de vers protoniques et de la déformation relative du temps (ainsi qu’un gros paquet de blé) que Emitime a put accomplir son rêve : vous emmener où vous le voulez, et surtout quand vous le voulez !
+  		</p>
+  	</div>
+  	<div id="photoAlbum">
+  		<div class="photo">
+  			<div class="photoScientifique">
+          <img class="personnages" src="img/jeanVillian.svg" alt="">
         </div>
-	</div>
-</header>
-<div class="section" id="home">
-	<video autoplay muted loop id="myVideo">
-		<source src="animations/animation-logo-emitime.mp4" type="video/mp4">
-	</video>
-</div>
-<div class="section" id="LeLabo">
-	<h2>Le Labo</h2>
-	<div class="icon"><i id="iconFlacon" class="sizeIcon fas fa-flask"></i></div>
-	<div id="blockIntroLabo">
-		<p id="introLabo">Le laboratoire Emitime est fier de pouvoir enfin vous proposer ses services ! 
-		Créé en 2035 par Jean Villin, Lucien Bramar et Drake Floyd, c’est l’avancée la plus important du siècle. La réunion de ces trois génies de la motorisation, de la science quantique et du design a permit la création du premier laboratoire de science spécialisé dans la commercialisation de voyage temporel. c’est par l’étude des trou de vers protoniques et de la déformation relative du temps (ainsi qu’un gros paquet de blé) que Emitime a put accomplir son rêve : vous emmener où vous le voulez, et surtout quand vous le voulez !
-		</p>
-	</div>
-	<div id="photoAlbum">
-		<div class="photo">
-			<div class="photoScientifique">
-                <img class="personnages" src="img/jeanVillian.svg" alt="">
-            </div>
-            <h4 id="nomSCientifiques">Jean Villin</h4>
-			<div>
-                <p class="descriptionPhoto">Jean Villin est un éminent scientifique français à l’origine du projet EMITIME. Il est spécialiste ingénieur en motorisation diplômé en 2031. C’est sa rencontre avec Lucien Bramar, éminent philosophe et physicien, qui va le pousser à créer son propre laboratoire : EMITIME avec comme but de pouvoir remonter dans le temps. </p>
-            </div>
-		</div>
-		<div class="photo">
-			<div class="photoScientifique">
-                <img class="personnages" src="img/lucienBramar.svg" alt="">
-            </div>
-             <h4 id="nomSCientifiques">Lucien Bramar</h4>
-			<div>
-                <p class="descriptionPhoto">Lucien Bramar est un grand chercheur philosophe, mathématicien, physicien. Plus connu pour ses collaborations que pour ses travaux personnels c’est  sa collaboration avec Jean Villin qui lui fera avoir en 2041 un superbe prix nobel de physique qui atteste de sa qualité scientifique.</p>
-            </div>
-		</div>
-		<div class="photo">
-			<div class="photoScientifique">
-                <img class="personnages" src="img/drakeFloyd.svg" alt="">
-            </div>
-             <h4 id="nomSCientifiques">Drake Floyd</h4>
-			<div>
-                <p class="descriptionPhoto">Né à Llanfair­pwll­gwyn­gyll­go­gery­chwyrn­drobwll­llan­tysilio­gogo­goch au Pays de Galles en 2019, Drake Floyd est un jeune ingénieur designer informaticien prodige qui premettra à Lucien Bramar de mettre en application ses thorèmes et va ainsi donner à Emitime une impulsion fondamentale à la création du Laboratoire.</p>
-            </div>
-		</div>
-	</div>
-</div>
-<div class="section" id="NosInventions">
-	<h2>Nos inventions</h2>
-	<div class="icon"><i id="iconMontre" class="sizeIcon fas fa-stopwatch"></i></div>
-<!--slider-->
+        <h4 id="nomSCientifiques">Jean Villin</h4>
+  			<div>
+          <p class="descriptionPhoto">Jean Villin est un éminent scientifique français à l’origine du projet EMITIME. Il est spécialiste ingénieur en motorisation diplômé en 2031. C’est sa rencontre avec Lucien Bramar, éminent philosophe et physicien, qui va le pousser à créer son propre laboratoire : EMITIME avec comme but de pouvoir remonter dans le temps. </p>
+        </div>
+  		</div>
+  		<div class="photo">
+  			<div class="photoScientifique">
+          <img class="personnages" src="img/lucienBramar.svg" alt="">
+        </div>
+        <h4 id="nomSCientifiques">Lucien Bramar</h4>
+  			<div>
+          <p class="descriptionPhoto">Lucien Bramar est un grand chercheur philosophe, mathématicien, physicien. Plus connu pour ses collaborations que pour ses travaux personnels c’est  sa collaboration avec Jean Villin qui lui fera avoir en 2041 un superbe prix nobel de physique qui atteste de sa qualité scientifique.</p>
+        </div>
+  		</div>
+  		<div class="photo">
+  			<div class="photoScientifique">
+          <img class="personnages" src="img/drakeFloyd.svg" alt="">
+        </div>
+        <h4 id="nomSCientifiques">Drake Floyd</h4>
+  			<div>
+          <p class="descriptionPhoto">Né à Llanfair­pwll­gwyn­gyll­go­gery­chwyrn­drobwll­llan­tysilio­gogo­goch au Pays de Galles en 2019, Drake Floyd est un jeune ingénieur designer informaticien prodige qui premettra à Lucien Bramar de mettre en application ses thorèmes et va ainsi donner à Emitime une impulsion fondamentale à la création du Laboratoire.</p>
+        </div>
+  		</div>
+  	</div>
+  </div>
+  <div class="section" id="NosInventions">
+  	<h2>Nos inventions</h2>
+  	<div class="icon">
+      <i id="iconMontre" class="sizeIcon fas fa-stopwatch"></i>
+    </div>
+  <!--slider-->
     <section class="vertical-center-3 slider">
-        <div class="sliderPresentation">
-          <div class="photoInvention video">
-            <video autoplay muted loop>
-              <source src="animations/animation-hamster-emitime.mp4" type="video/mp4">
-            </video>
-          </div>
-          <div class="descriptionInvention">
-          	<div class="zoneNomMachine">
-          		<h3 class="NomMachine">Rowlham 0.1.1</h3>
-          	</div>
-          	<div class="textMachine">
-             Vous voulez vous offrir le voyage temporel de vos rêves et vous avez le budget d’un jeune et pétulant étudiant en art appliqué anticonformiste? Emitime a la solution pour vous!
-Il vous suffit d’acheter le Rowlham, le produit d’entrée de gamme de notre collection. Cette machine vous permettra de voyager comme vous l’entendez à moindre coût, et ce d’une facilité révoltante. Commandez le dès à présent et recevez en cadeau le premier hamster de recharge. 
-<br>
-<br>
-<p class="Condition">conditions d’utilisation : attention l’abus de voyages temporels entraîne une accumulation de paradoxes temporels, utilisation sur une période restreinte à deux douzaines d’années au supérieur ou à l’inférieur, hamsters à usage uniques, l’utilisation d’animaux de compagnies est déconseillé pour des raisons de déprimes infantiles.</p>
- 
-            </div>
-          </div>
-          
+      <div class="sliderPresentation">
+        <div class="photoInvention video">
+          <video autoplay muted loop>
+            <source src="animations/animation-hamster-emitime.mp4" type="video/mp4">
+          </video>
         </div>
-        <div class="sliderPresentation">
-        	<div class="photoInvention video"> 
-            <video autoplay muted loop>
-              <source src="animations/animation-cheval-emitime.mp4" type="video/mp4">
-            </video>
+        <div class="descriptionInvention">
+          <div class="zoneNomMachine">
+            <h3 class="NomMachine">Rowlham 0.1.1</h3>
           </div>
+          <div class="textMachine">
+               Vous voulez vous offrir le voyage temporel de vos rêves et vous avez le budget d’un jeune et pétulant étudiant en art appliqué anticonformiste? Emitime a la solution pour vous!
+  Il vous suffit d’acheter le Rowlham, le produit d’entrée de gamme de notre collection. Cette machine vous permettra de voyager comme vous l’entendez à moindre coût, et ce d’une facilité révoltante. Commandez le dès à présent et recevez en cadeau le premier hamster de recharge. 
+            <br>
+            <br>
+            <p class="Condition">conditions d’utilisation : attention l’abus de voyages temporels entraîne une accumulation de paradoxes temporels, utilisation sur une période restreinte à deux douzaines d’années au supérieur ou à l’inférieur, hamsters à usage uniques, l’utilisation d’animaux de compagnies est déconseillé pour des raisons de déprimes infantiles.</p>
+   
+          </div>
+        </div>            
+      </div>
+      <div class="sliderPresentation">
+        <div class="photoInvention video"> 
+          <video autoplay muted loop>
+            <source src="animations/animation-cheval-emitime.mp4" type="video/mp4">
+          </video>
+        </div>
+        <div class="descriptionInvention">
+          <div class="zoneNomMachine">
+            <h3 class="NomMachine">The Unirun v2</h3>
+  	          	</div>
+  	          	<div class="textMachine">
+                La toute nouvelle machine The Unirun propose aux amateurs de voyages temporels tout ce qu’ils aiment dans leur machine, et bien plus encore : une capacité doublée, une autonomie incroyable et un design magnifique. Pour un prix catégoriquement honnête, The Unirun est la promesse d’un voyage de qualité en toute simplicité. 
+  The Unirun, un voyage qui a du cheval!
+  <br>
+  <br>
+  <p class="Condition">conditions d’utilisation : attention l’abus de voyages temporels entraîne une accumulation de paradoxes temporels, utilisation sur une période restreinte au siècle supérieur ou à l’inférieur, des problèmes de fonctionnements peuvent entraîner un vieillissement prématuré.</p>
+    
+                </div>
+  	        </div>
+          </div>
+          <div class="sliderPresentation">
+          	<div class="photoInvention video">
+             <video autoplay muted loop>
+                <source src="animations/animation-bouton-emitime.mp4" type="video/mp4">
+              </video> 
+            </div>
           	<div class="descriptionInvention">
-	          	<div class="zoneNomMachine">
-	          		<h3 class="NomMachine">The Unirun v2</h3>
-	          	</div>
-	          	<div class="textMachine">
-              La toute nouvelle machine The Unirun propose aux amateurs de voyages temporels tout ce qu’ils aiment dans leur machine, et bien plus encore : une capacité doublée, une autonomie incroyable et un design magnifique. Pour un prix catégoriquement honnête, The Unirun est la promesse d’un voyage de qualité en toute simplicité. 
-The Unirun, un voyage qui a du cheval!
-<br>
-<br>
-<p class="Condition">conditions d’utilisation : attention l’abus de voyages temporels entraîne une accumulation de paradoxes temporels, utilisation sur une période restreinte au siècle supérieur ou à l’inférieur, des problèmes de fonctionnements peuvent entraîner un vieillissement prématuré.</p>
-  
+  	          	<div class="zoneNomMachine">
+  	          		<h3 class="NomMachine">Tie-Me-Out 4.0.4</h3>
+  	          	</div>
+          		<div class="textMachine">
+              Pour tout homme d’affaire qui souhaite se rétracter après une signature de contrat douteux, le TiMO (Tie-Me-Out) est la machine de voyage temporelle indispensable!
+  A la fois produit splendide et commode à l’excès, sa classe et son élégance vous rendront plus raffiné que jamais et vous feront briller en société. Sa simplicité d’utilisation et son ergonomie vous feront bénéficier indéniablement d’un gain de place… et de temps! 
+  <br>
+  <br>
+  <p class="Condition">condition d’utilisation : attention l’abus de voyages temporels entraîne une accumulation de paradoxes temporels, l’entreprise se déresponsabilise d’un contrat mal signé si vous n’utilisez pas correctement l’appareil, l’abus excessif d’appuis sur l’appareil peut causer des dégâts physiques et des pertes de membres irréversibles, Emitime se réserve le droit de vendre un appareil à une entreprise et à sa concurrence.</p>
+    
               </div>
-	        </div>
-        </div>
-        <div class="sliderPresentation">
-        	<div class="photoInvention video">
-           <video autoplay muted loop>
-              <source src="animations/animation-bouton-emitime.mp4" type="video/mp4">
-            </video> 
+          	</div>
           </div>
-        	<div class="descriptionInvention">
-	          	<div class="zoneNomMachine">
-	          		<h3 class="NomMachine">Tie-Me-Out 4.0.4</h3>
-	          	</div>
-        		<div class="textMachine">
-            Pour tout homme d’affaire qui souhaite se rétracter après une signature de contrat douteux, le TiMO (Tie-Me-Out) est la machine de voyage temporelle indispensable!
-A la fois produit splendide et commode à l’excès, sa classe et son élégance vous rendront plus raffiné que jamais et vous feront briller en société. Sa simplicité d’utilisation et son ergonomie vous feront bénéficier indéniablement d’un gain de place… et de temps! 
-<br>
-<br>
-<p class="Condition">condition d’utilisation : attention l’abus de voyages temporels entraîne une accumulation de paradoxes temporels, l’entreprise se déresponsabilise d’un contrat mal signé si vous n’utilisez pas correctement l’appareil, l’abus excessif d’appuis sur l’appareil peut causer des dégâts physiques et des pertes de membres irréversibles, Emitime se réserve le droit de vendre un appareil à une entreprise et à sa concurrence.</p>
-  
-            </div>
-        	</div>
-        </div>
-      </section>
-</div>
+        </section>
+  </div>
 <div class="section" id="Donation">
   <h2>Donation</h2>
   <div class="icon">

@@ -327,13 +327,17 @@ section.vertical-center-3 {
 
     .slick-prev:before,
     .slick-next:before {
-      color: black;
+      color: white;
     }
 
 
     .slick-slide {
       transition: all ease-in-out .3s;
       }
+
+    .slick-dots li.slick-active button:before {
+    color: white;
+  }
 /*slide*/
 
 div.photoInvention
