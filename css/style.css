@@ -115,13 +115,21 @@ a.js-scrollTo{
   height: calc(95vh - 40px);
 }
 
-#myVideo {
+.myVideo {
     right: 0;
     bottom: 0;
     width: 100%;
-    margin: auto; 
+    margin: auto;
     height: calc(95vh - 40px);
     pointer-events: none;
+    z-index: 50;
+}
+
+.myInvention {
+    width: 250px;
+    margin: auto;
+    height: 250px;
+    z-index: 50;
 }
 
 #emitime{
@@ -202,7 +210,7 @@ a.js-scrollTo{
     transform: rotate(45deg) translate(-8px, -8px);
     background-color: #ff4b82;
 }
-    
+
 /*/Burger*/
 
 div.icon{
@@ -308,7 +316,7 @@ section.vertical-center-3 {
       margin: 0;
     }
 
-    .slick-slide 
+    .slick-slide
     div .sliderPresentation {
       width: 100vw;
       min-height:95vh;
@@ -328,7 +336,7 @@ section.vertical-center-3 {
 
 div.photoInvention
 {
-	background-color: black;
+	background-color: white;
     padding: 3%;
     width: 40%;
     height: 85vh;
@@ -346,13 +354,16 @@ div.descriptionInvention
 
 div.zoneNomMachine
 {
-    background-color: orange;
+    background-color: white;
     float: right;
     margin: 27px;
     padding: 3px;
     display: block;
     position: relative;
     width: 40%;
+    border-radius: 10px;
+    font-size: 18px;
+    font-family: "Neon80"
 }
 
 h3.NomMachine{
@@ -362,13 +373,15 @@ h3.NomMachine{
 
 div.textMachine
 {
-    background-color: green;
+    background-color: white;
     width: 40%;
     position: relative;
     height: 68vh;
+    font-family: "Avenir";
     float: right;
     padding: 3%;
     display: block;
+    border-radius: 10px;
 }
 
 div#cochonDonation{
@@ -391,7 +404,7 @@ div#boutonDonation
 }
 
 p#Donnez{
-  
+
   text-align: center;
   font-size:30px;
   margin:0;
@@ -498,7 +511,7 @@ div.textMachine
     .header a.Emitime:hover{
         background:#f1f1f1;
     }
-	
+
 	div#helpTopMobile a h3
 	{
 		margin-left: 10%;
@@ -521,7 +534,7 @@ div.textMachine
     	margin-top:20%;
     	float:none;
     }
-    
+
 }
 
 @media screen and (max-width: 400px) {
