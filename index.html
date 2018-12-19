@@ -89,7 +89,11 @@
     <section class="vertical-center-3 slider">
         <div class="sliderPresentation">
           <div class="photoInvention" id="invention1">
+<<<<<<< Updated upstream
+						<video autoplay muted loop class="myVideo">
+=======
 						<video autoplay muted loop class="myInvention">
+>>>>>>> Stashed changes
 							<source src="animations/animation-hamster-emitime.mp4" type="video/mp4">
 						</video></div>
           <div class="descriptionInvention">
@@ -133,7 +137,37 @@
 <div class="section" id="Newsletter">
 	<h2>Newsletter</h2>
 	<div class="icon"><i id="iconLetter" class="sizeIcon fas fa-envelope"></i></div>
+
+
+
+
+	<form method="POST" action="newsletter.php">
+
+<label for="nom">Nom</label> <input type="text"  name="nom" id="nom" value=""/><br />
+
+<label for="prenom">Prenom</label> <input type="text"  name="prenom" id="prenom" value=""/><br />
+
+<label for="mail">Mail</label> <input type="email"  name="mail" id="mail" value=""/><br />
+
+   <p><label for="inventions">Inventions</label>
+    Cochez les inventions qui vous interesse :<br />
+
+		<input type="checkbox" name="invention[]" id="invRowlham" value="Rowlham" /><br />
+		<label for="invRowlham">Rowlham</label><br />
+
+    <input type="checkbox" name="invention[]" id="invUnirun"  value="The Unirun"/> <br />
+		<label for="invUnirun">The Unirun</label><br />
+
+    <input type="checkbox" name="invention[]" id="invTieMeOut" value="Tie-Me-Out"/> <br />
+		<label for="invTieMeOut">Tie-Me-Out</label><br />
+</p>
+
+<input type="submit" name="Envoyer" value="Envoyer" /> </form>
 </div>
+
+
+
+
 <div class="section" id="Contact">
 	<h2>Contact</h2>
 	<div class="icon"><i id="iconA" class="sizeIcon fas fa-at"></i></div>
