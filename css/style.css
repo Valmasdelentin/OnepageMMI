@@ -115,21 +115,13 @@ a.js-scrollTo{
   height: calc(95vh - 40px);
 }
 
-.myVideo {
+#myVideo {
     right: 0;
     bottom: 0;
     width: 100%;
-    margin: auto;
+    margin: auto; 
     height: calc(95vh - 40px);
     pointer-events: none;
-    z-index: 50;
-}
-
-.myInvention {
-    width: 250px;
-    margin: auto;
-    height: 250px;
-    z-index: 50;
 }
 
 #emitime{
@@ -210,7 +202,7 @@ a.js-scrollTo{
     transform: rotate(45deg) translate(-8px, -8px);
     background-color: #ff4b82;
 }
-
+    
 /*/Burger*/
 
 div.icon{
@@ -316,7 +308,7 @@ section.vertical-center-3 {
       margin: 0;
     }
 
-    .slick-slide
+    .slick-slide 
     div .sliderPresentation {
       width: 100vw;
       min-height:95vh;
@@ -336,7 +328,7 @@ section.vertical-center-3 {
 
 div.photoInvention
 {
-	background-color: white;
+	background-color: black;
     padding: 3%;
     width: 40%;
     height: 85vh;
@@ -354,16 +346,13 @@ div.descriptionInvention
 
 div.zoneNomMachine
 {
-    background-color: white;
+    background-color: orange;
     float: right;
     margin: 27px;
     padding: 3px;
     display: block;
     position: relative;
     width: 40%;
-    border-radius: 10px;
-    font-size: 18px;
-    font-family: "Neon80"
 }
 
 h3.NomMachine{
@@ -373,41 +362,38 @@ h3.NomMachine{
 
 div.textMachine
 {
-    background-color: white;
+    background-color: green;
     width: 40%;
     position: relative;
     height: 68vh;
-    font-family: "Avenir";
     float: right;
     padding: 3%;
     display: block;
-    border-radius: 10px;
 }
 
 div#cochonDonation{
   background-color: white;
   border-radius: 10px;
-  width: 50vw;
+  width: 70vw;
   height: 40vh;
-  margin:auto;
-  margin-top:3%;
+  margin:6% auto;
 }
 
 div#boutonDonation
 {
   background-color: white;
-  width: 5vw;
-  height: 5vh;
+  width: 170px;
+  height: 70px;
   margin:auto;
-  margin-top:3%;
-  padding:5%;
+  border-radius:10px;
 }
 
 p#Donnez{
-
+  
   text-align: center;
   font-size:30px;
-  margin:0;
+  padding:18px;
+  color:#422b57;
 }
 
 @media screen and (max-width: 1111px) {
@@ -473,6 +459,16 @@ div.textMachine
     }
 
 /*slide*/
+div#myVideoDonnation{
+    right: 0;
+    bottom: 0;
+    width: 37%;
+    text-aligne: center;
+    margin: auto 31%;
+    height: 90%;
+    pointer-events: none; 
+}
+    
 
 }
 
@@ -511,7 +507,7 @@ div.textMachine
     .header a.Emitime:hover{
         background:#f1f1f1;
     }
-
+	
 	div#helpTopMobile a h3
 	{
 		margin-left: 10%;
@@ -534,7 +530,7 @@ div.textMachine
     	margin-top:20%;
     	float:none;
     }
-
+    
 }
 
 @media screen and (max-width: 400px) {
