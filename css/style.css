@@ -158,10 +158,82 @@ a.js-scrollTo{
   min-height: 95vh;
 }
 .section#Contact {
-  background-color: purple;
+  background-color: #252525;
   width: 100%;
-  min-height: 95vh;
+  min-height: 75vh;
+  padding-top: 7vh;
+  padding-bottom: 0;
 }
+
+.section#Contact h2 {
+  visibility : hidden;
+}
+
+.section#Contact #coord {
+  position : relative;
+  background-color: #191919;
+  color : white;
+  text-align : center;
+  width: 60%;
+  top : 10%;
+  left : 20%;
+  padding: 2% 0% 0.5% 0%;
+  margin-bottom: 12%;
+  min-height: 35vh;
+}
+
+.section#Contact #coord a{
+  color : white;
+  padding-left : 10px;
+  padding-right : 10px;
+  transition:' tv ' 0.4s all ease; 
+}
+
+.section#Contact #coord a:hover {
+  color : #FBE65A;
+  border-left: 1px solid #FBE65A;
+  border-right: 1px solid #FBE65A;
+}
+
+#footer {
+  background-color: #161616;
+  color : white;
+  width: 100%;
+  text-align: center;
+  margin-top : 2%;
+  padding: 5% 0%; 
+}
+
+#footer a {
+  color : white;
+  position : relative;
+  text-align: center;
+  font-size: 200%;
+  text-indent: 5%;
+  right : 2%;
+
+ }
+
+ #footer a .fa-facebook-f:hover {
+  color : #4064AC; 
+  transition: 0.4s all ease; 
+ }
+
+ #footer a .fa-twitter:hover {
+  transition: 0.4s all ease; 
+  color : #1d9cab; 
+ }
+
+  #footer a .fa-instagram:hover {
+  transition: 0.4s all ease; 
+  color: #ab2fb4;
+
+ }
+
+
+ #copy {
+  padding-top:2%;
+ }
 
 .section h2
 {
